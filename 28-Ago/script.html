@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del adobo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head borde">
+            <p>Historia del Adobo</p>
+        </header>
+        <main class="main borde">
+            <h1>Principal conservador</h1>
+            <p>Los adobos aparecen con el fin de poder conservar la carne durante más tiempo, algo que en la antigüedad era bastante complicado. Esto influye mucho en la productividad de la carne, al poder conservarse durante más tiempo se puede producir más cantidad.</p>
+            <div id="my-div"></div>
+        </main>
+        <aside class="lado borde">
+            <p>Las fuentes nos muestran de un modo genérico que en la época lombarda el adobo de la carne de cerdo recibió un fuerte desarrollo. El gran desarrollo de los métodos de adobo y conservación de la carne también fue un punto muy importante en la época de la Edad Media. Tenemos referencias del adobo en diferentes épocas, pero si no podemos decir con exactitud el momento en el que empezó al método de adobar y conservar la carne.</p>
+        </aside>
+        <footer class="pie borde">
+            <p>Historiadores de comida</p>
+        </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+        new Vivus('my-div',{duration: 100, type: 'oneByOne', file:'imagenes/polliyooo.svg'},);
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal().reveal('.head', { delay: 200, distance: '150%', origin: 'top'});
+        ScrollReveal().reveal('.main', { delay: 500, scale: 0.85 });
+        ScrollReveal().reveal('.lado', { delay: 1000, rotate: { x: 20, z: 20 }});
+        ScrollReveal().reveal('.pie', { delay: 1200, distance: '150%', origin: 'bottom', });
+    </script>
+</body>
+</html>
